@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  python-repo-template:
+    image: utkusarioglu/python-devcontainer:1.0.6
+    volumes:
+      - type: bind
+        source: ..
+        target: /utkusarioglu-com/templates/python-repo-template
