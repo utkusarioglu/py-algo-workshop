@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   python-repo-template:
-    image: utkusarioglu/python-devcontainer:1.0.6
+    image: utkusarioglu/python-devcontainer:1.0.8
     volumes:
       - type: bind
         source: ..
