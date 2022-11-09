@@ -1,11 +1,11 @@
 {
-  "name": "python-repo-template.templates.utkusarioglu.com",
+  "name": "two-sums-trial.trials.utkusarioglu.com",
   "dockerComposeFile": [
     "../.docker/docker-compose.dev.yml",
     "docker-compose.yml"
   ],
-  "service": "python-repo-template",
-  "workspaceFolder": "/utkusarioglu-com/templates/python-repo-template",
+  "service": "two-sums-trial",
+  "workspaceFolder": "/utkusarioglu-com/trials/two-sums-trial",
   "settings": {
     "workbench.colorCustomizations": {
       "activityBar.background": "#004400"
