@@ -1,4 +1,4 @@
-#!/home/python/main/bin/python
+#!/home/python/venv/main/bin/python
 from maximum_subarray import maximum_subarray_with_indices
 
 if __name__ == "__main__":
