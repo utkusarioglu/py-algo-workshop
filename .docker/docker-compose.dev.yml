@@ -3,6 +3,8 @@ version: "3.9"
 services:
   two-sums-trial:
     image: utkusarioglu/python-devcontainer:1.0.8
+    environment:
+      PYTHONPATH: /utkusarioglu-com/trials/two-sums-trial
     volumes:
       - type: bind
         source: ..
