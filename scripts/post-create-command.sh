@@ -1,3 +1,3 @@
 #!/bin/bash
 
-.updater/update-status.sh
+.elam/update-status.sh
