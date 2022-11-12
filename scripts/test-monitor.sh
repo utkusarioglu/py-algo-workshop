@@ -1,14 +1,11 @@
 #!/bin/bash
 
-echo "Starting watchmedo…"
+echo "Starting watchmedo for pytest…"
 watchmedo shell-command \
   --patterns "*.py" \
   --recursive \
   --command "\
-    python -m unittest \
-      discover \
-      -s tests \
-      -p='*_unit_test.py' \
+      pytest src \
     " \
   .
   

@@ -1,7 +1,7 @@
 #!/bin/bash
 source ~/venv/main/bin/activate
 
-echo "Starting watchmedo…"
+echo "Starting watchmedo for \`src/main.py\`…"
 watchmedo shell-command \
   --patterns "*.py" \
   --recursive \
