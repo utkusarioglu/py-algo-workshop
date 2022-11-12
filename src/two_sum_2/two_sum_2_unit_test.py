@@ -2,7 +2,7 @@
 import sys
 sys.path.append("..")
 import unittest
-from src.two_sum_2 import two_sum_2_hash_map, two_sum_2_pointers 
+from two_sum_2.two_sum_2 import two_sum_2_hash_map, two_sum_2_pointers 
 
 class TwoSum2Test(unittest.TestCase):
   def test_hash_map(self):
