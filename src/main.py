@@ -2,8 +2,9 @@
 from enum import Enum
 from maximum_subarray import maximum_subarray, maximum_subarray_with_indices
 from two_sum_2 import two_sum_2_hash_map, two_sum_2_pointers
+from house_robber import HouseRobber
 
-algo = Enum("algo", ["two_sums_2", "maximum_subarray"])
+algo = Enum("algo", ["two_sums_2", "maximum_subarray", "house_robber"])
 
 def main(selected_algo):
   match selected_algo:
@@ -21,11 +22,17 @@ def main(selected_algo):
         maximum_subarray(arr),
         maximum_subarray_with_indices(arr)
       ]
+    
+    case algo.house_robber:
+      house_robber = HouseRobber()
+      return [
+        house_robber.max_spoils_loop([1,3,1,4])
+      ]
 
 def print_result(result):
   [print(line) for line in ["--", selected_algo.name, *result]]
 
 if __name__ == "__main__":
-  selected_algo = algo.two_sums_2
+  selected_algo = algo.house_robber
   result = main(selected_algo)
   print_result(result)

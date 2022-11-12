@@ -2,7 +2,7 @@
 import sys
 sys.path.append("..")
 import unittest
-from src import maximum_subarray
+from maximum_subarray import maximum_subarray
 
 class MaximumSubarrayTest(unittest.TestCase):
   def test_default_values_vanilla(self):
