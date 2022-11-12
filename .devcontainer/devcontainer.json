@@ -1,11 +1,11 @@
 {
-  "name": "two-sums-trial.trials.utkusarioglu.com",
+  "name": "python-algo.workshops.utkusarioglu.com",
   "dockerComposeFile": [
     "../.docker/docker-compose.dev.yml",
     "docker-compose.yml"
   ],
-  "service": "two-sums-trial",
-  "workspaceFolder": "/utkusarioglu-com/trials/two-sums-trial",
+  "service": "python-algo-workshop",
+  "workspaceFolder": "/utkusarioglu-com/workshops/python-algo",
   "settings": {
     "workbench.colorCustomizations": {
       "activityBar.background": "#004400"
