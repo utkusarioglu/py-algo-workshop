@@ -1,3 +1,3 @@
-# Python Repo Template
+# Python Algo Workshop
 
-A template repo for my own personal python workshops, and experiments.
+I play with python algo things in this workshop
