@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  python-algo-workshop:
+  py-algo-workshop:
     environment:
       GH_TOKEN: ${GH_TOKEN}
     volumes:
@@ -14,6 +14,6 @@ services:
 
 volumes:
   vscode-extensions:
-    name: python-algo-workshop-vscode-extensions
+    name: py-algo-workshop-vscode-extensions
   vscode-extensions-insiders:
-    name: python-algo-workshop-vscode-extensions-insiders
+    name: py-algo-workshop-vscode-extensions-insiders

@@ -4,7 +4,7 @@
     "../.docker/docker-compose.dev.yml",
     "docker-compose.yml"
   ],
-  "service": "python-algo-workshop",
+  "service": "py-algo-workshop",
   "workspaceFolder": "/utkusarioglu-com/workshops/python-algo",
   "settings": {
     "workbench.colorCustomizations": {

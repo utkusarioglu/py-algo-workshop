@@ -1,5 +1,4 @@
 {
-  "python.formatting.provider": "black",
   "runOnSave.commands": [
     {
       "match": "\\.env(\\.\\w+)?$",
@@ -12,5 +11,6 @@
       "isAsync": true,
       "command": "gh secret set -f .env"
     },
-  ]
+  ],
+  "python.formatting.autopep8Path": "black"
 }
