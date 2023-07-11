@@ -10,7 +10,10 @@ from unique.unique import *
 from dunder.dunder import *
 from longest_substring_without_repeats.substring import Solution
 from number_reversal.number_reversal import NumberReversal
-
+from class_vars import ClassVars
+from koko import Koko
+from smallest_divisor import SmallestDivisor
+from rotated_array import RotatedArray
 
 def two_sums_2():
     numbers = [1, 3, 4, 5, 7, 10, 12]
@@ -106,13 +109,62 @@ def number_reversal():
     param = -123
     # param = 1534236469
     answer = n.usingMath(param)
-    return [answer]
+    print(answer)
 
 
-def print_result(result):
-    [print(line) for line in ["--", *result]]
+def koko():
+    instance = Koko()
+    piles = [3, 6, 7, 11]
+    h = 8
+
+    piles = [30, 11, 23, 4, 20]
+    h = 5
+
+    piles = [30, 11, 23, 4, 20]
+    h = 6
+
+    # piles = [312884470]
+    # h = 312884469
+
+    # piles = [312884470]
+    # h = 968709470
+
+    print(instance.iterative(piles, h))
+
+
+def smallestDivisor():
+    instance = SmallestDivisor()
+    nums = [1, 2, 5, 9]
+    threshold = 6
+    # Output: 5
+
+    nums = [1, 2, 3]
+    threshold = 3
+    # Output: 3
+
+    # nums = [21212, 10101, 12121]
+    # threshold = 1000000
+    # Output: 1
+
+    # nums = [44, 22, 33, 11, 1]
+    # threshold = 5
+    # Output: 44
+    
+    output = instance.smallestDivisor(nums, threshold)
+    print(output)
+
+
+def rotatedArray():
+    instance = RotatedArray()
+    nums = [3, 4, 5, 6, 2]
+    # Output: 1
+
+    nums = [4,5,6,7,0,1,2]
+    # Output: 0
+
+    output = instance.findMin(nums)
+    print(output)
 
 
 if __name__ == "__main__":
-    result = number_reversal()
-    print_result(result)
+    rotatedArray()
