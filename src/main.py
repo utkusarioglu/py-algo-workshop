@@ -14,6 +14,8 @@ from class_vars import ClassVars
 from koko import Koko
 from smallest_divisor import SmallestDivisor
 from rotated_array import RotatedArray
+from prerequisites import Prerequisites
+from merge_intervals import MergeIntervals
 
 def two_sums_2():
     numbers = [1, 3, 4, 5, 7, 10, 12]
@@ -159,12 +161,48 @@ def rotatedArray():
     nums = [3, 4, 5, 6, 2]
     # Output: 1
 
-    nums = [4,5,6,7,0,1,2]
+    nums = [4, 5, 6, 7, 0, 1, 2]
     # Output: 0
+    # nums = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    # nums = [9, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+    nums = [num + 2 for num in nums]
 
     output = instance.findMin(nums)
     print(output)
 
 
+def prerequisites():
+    instance = Prerequisites()
+    numCourses = 4
+    prerequisites = [[1, 0], [2, 0], [3, 1], [3, 2]]
+    #  [0,2,1,3]
+    numCourses = 2
+    prerequisites = [[0, 1], [1, 0]]
+    # []
+    numCourses = 3
+    prerequisites = [[1, 0]]
+    # [2,0,1]
+    numCourses = 7
+    prerequisites = [[1, 0], [0, 3], [0, 2], [3, 2], [2, 5], [4, 5], [5, 6], [2, 4]]
+    # [6,5,4,2,3,0,1]
+    numCourses = 8
+    prerequisites = [
+        [7, 2], [3, 5], [6, 3], [1, 3], [0, 1], [7, 6], [7, 2]
+    ]
+
+    output = instance.findOrder(numCourses, prerequisites)
+    print(output)
+
+
+def mergeIntervals():
+    instance = MergeIntervals()
+    intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]
+    # [[1,6],[8,10],[15,18]]
+    intervals = [[1, 4], [0, 1]]
+    # [[0, 4]]
+    output = instance.merge(intervals)
+    print(output)
+
+
 if __name__ == "__main__":
-    rotatedArray()
+    mergeIntervals()

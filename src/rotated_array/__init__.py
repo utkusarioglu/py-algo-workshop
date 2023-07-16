@@ -1,14 +1,14 @@
 class RotatedArray:
     def findMin(self, nums: list[int]) -> int:
-        leftIndex = 0
-        rightIndex = len(nums) - 1
-        while leftIndex < rightIndex:
-            midIndex = (leftIndex + rightIndex) // 2
-            print(leftIndex, rightIndex, midIndex)
-            if (nums[midIndex] > nums[leftIndex] or
-                    nums[midIndex] > nums[rightIndex]):
-                print("true")
-                leftIndex = midIndex + 1
+        left = 0
+        right = len(nums) - 1
+        while right - left > 1:
+            mid = (left + right) // 2
+            left_num = nums[left]
+            right_num = nums[right]
+            mid_num = nums[mid]
+            if mid_num > left_num and mid_num > right_num:
+                left = mid
             else:
-                rightIndex = midIndex
-        return nums[rightIndex]
+                right = mid
+        return nums[right] if nums[right] < nums[left] else nums[left]
