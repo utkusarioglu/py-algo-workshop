@@ -5,5 +5,11 @@ echo "Starting watchmedo for \`src/main.py\`…"
 watchmedo shell-command \
   --patterns "*.py" \
   --recursive \
-  --command src/main.py \
+  --wait \
+  --verbose \
+  --command '
+      if [ "${watch_event_type}" = "closed" ]; then
+        src/main.py
+      fi
+  '\
   src
