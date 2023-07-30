@@ -16,6 +16,10 @@ from smallest_divisor import SmallestDivisor
 from rotated_array import RotatedArray
 from prerequisites import Prerequisites
 from merge_intervals import MergeIntervals
+from network_delay import NetworkDelay
+from search import Search
+from max_heap import Heap
+
 
 def two_sums_2():
     numbers = [1, 3, 4, 5, 7, 10, 12]
@@ -151,7 +155,7 @@ def smallestDivisor():
     # nums = [44, 22, 33, 11, 1]
     # threshold = 5
     # Output: 44
-    
+
     output = instance.smallestDivisor(nums, threshold)
     print(output)
 
@@ -186,9 +190,7 @@ def prerequisites():
     prerequisites = [[1, 0], [0, 3], [0, 2], [3, 2], [2, 5], [4, 5], [5, 6], [2, 4]]
     # [6,5,4,2,3,0,1]
     numCourses = 8
-    prerequisites = [
-        [7, 2], [3, 5], [6, 3], [1, 3], [0, 1], [7, 6], [7, 2]
-    ]
+    prerequisites = [[7, 2], [3, 5], [6, 3], [1, 3], [0, 1], [7, 6], [7, 2]]
 
     output = instance.findOrder(numCourses, prerequisites)
     print(output)
@@ -204,5 +206,32 @@ def mergeIntervals():
     print(output)
 
 
+# Return to this
+def networkDelayTime():
+    instance = NetworkDelay()
+    times = [[2, 1, 1], [2, 3, 1], [3, 4, 1]]
+    n = 4
+    k = 2
+    # 2
+
+    # times = [[1, 2, 1]]
+    # n = 2
+    # k = 1
+    # # 1
+
+    output = instance.networkDelayTime(times, n, k)
+    print(output)
+
+
+def search():
+    instance = Search()
+    count = 8
+    node_list = [[7, 2], [3, 5], [6, 3], [1, 3], [0, 1], [7, 6], [7, 2]]
+    node_list = [[0, 1], [0, 2], [2, 0], [2, 3], [2, 3], [3, 3]]
+    start = 0
+    output = instance.dfs(node_list, count, start)
+    print(output)
+
+
 if __name__ == "__main__":
-    mergeIntervals()
+    # heap()
