@@ -1,5 +1,11 @@
 #!/bin/bash
 
+test_look_path=$1
+
+if [ -z "$test_look_path" ]; then
+  test_look_path='src'
+fi
+
 echo "Starting watchmedo for pytest…"
 watchmedo shell-command \
   --patterns "*.py" \
@@ -11,4 +17,4 @@ watchmedo shell-command \
         pytest src/network_delay 
       fi
     '\
-  src
+  "$test_look_path"
