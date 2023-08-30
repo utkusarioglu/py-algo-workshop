@@ -21,6 +21,8 @@ from problems.network_delay import NetworkDelay
 from problems.search import Search
 from problems.max_heap import Heap
 
+from sorting_algorithms.counting_sort import CountingSort
+
 
 def two_sums_2():
     numbers = [1, 3, 4, 5, 7, 10, 12]
@@ -234,5 +236,12 @@ def search():
     print(output)
 
 
+def countingSort():
+    unsorted = [3, 2, 1]
+    instance = CountingSort()
+    response = instance.loop(unsorted)
+    print(response)
+
+
 if __name__ == "__main__":
-    # heap()
+    countingSort()
