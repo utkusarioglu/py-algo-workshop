@@ -25,6 +25,9 @@
       "detail": "Run tests",
       "type": "shell",
       "command": "scripts/test-monitor.sh",
+      "args": [
+        "${input:testLookPath}"
+      ],
       "icon": {
         "color": "terminal.ansiYellow",
         "id": "beaker"
@@ -38,6 +41,14 @@
         "clear": false,
         "close": false
       }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "testLookPath",
+      "description": "The relative path at which to look for tests",
+      "type": "promptString",
+      "default": "src"
     }
   ]
 }

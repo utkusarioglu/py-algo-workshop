@@ -1,24 +1,25 @@
 #!/home/python/venv/main/bin/python
-from maximum_subarray.maximum_subarray import *
-from two_sum_2.two_sum_2 import *
-from house_robber.house_robber import HouseRobber
-from complex_number.complex_number import *
-from dictionary.dictionary import *
-from generator.generator import *
-from decorator.decorator import *
-from unique.unique import *
-from dunder.dunder import *
-from longest_substring_without_repeats.substring import Solution
-from number_reversal.number_reversal import NumberReversal
-from class_vars import ClassVars
-from koko import Koko
-from smallest_divisor import SmallestDivisor
-from rotated_array import RotatedArray
-from prerequisites import Prerequisites
-from merge_intervals import MergeIntervals
-from network_delay import NetworkDelay
-from search import Search
-from max_heap import Heap
+from python.dictionary.dictionary import *
+from python.generator.generator import *
+from python.decorator.decorator import *
+from python.dunder.dunder import *
+from python.class_vars import ClassVars
+from python.prerequisites import Prerequisites
+
+from problems.maximum_subarray.maximum_subarray import *
+from problems.two_sum_2.two_sum_2 import *
+from problems.house_robber.house_robber import HouseRobber
+from problems.complex_number.complex_number import *
+from problems.unique.unique import *
+from problems.longest_substring_without_repeats.substring import Solution
+from problems.number_reversal.number_reversal import NumberReversal
+from problems.koko import Koko
+from problems.smallest_divisor import SmallestDivisor
+from problems.rotated_array import RotatedArray
+from problems.merge_intervals import MergeIntervals
+from problems.network_delay import NetworkDelay
+from problems.search import Search
+from problems.max_heap import Heap
 
 
 def two_sums_2():
