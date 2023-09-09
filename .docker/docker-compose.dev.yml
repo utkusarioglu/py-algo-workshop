@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   py-algo-workshop:
-    image: utkusarioglu/python-devcontainer:1.0.12
+    image: utkusarioglu/python-devcontainer:1.0.13
     environment:
       PYTHONPATH: /utkusarioglu-com/workshops/python-algo
     volumes:

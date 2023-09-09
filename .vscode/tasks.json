@@ -26,7 +26,7 @@
       "type": "shell",
       "command": "scripts/test-monitor.sh",
       "args": [
-        "${input:testLookPath}"
+        "${file}"
       ],
       "icon": {
         "color": "terminal.ansiYellow",
@@ -43,12 +43,12 @@
       }
     }
   ],
-  "inputs": [
-    {
-      "id": "testLookPath",
-      "description": "The relative path at which to look for tests",
-      "type": "promptString",
-      "default": "src"
-    }
-  ]
+  // "inputs": [
+  //   {
+  //     "id": "testLookPath",
+  //     "description": "The relative path at which to look for tests",
+  //     "type": "promptString",
+  //     "default": "src"
+  //   }
+  // ]
 }
