@@ -12,5 +12,6 @@
       "isAsync": true,
       "command": "gh secret set -f .env"
     },
-  ]
+  ],
+  "python.analysis.typeCheckingMode": "basic"
 }
