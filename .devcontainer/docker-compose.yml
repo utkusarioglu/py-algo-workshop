@@ -16,4 +16,4 @@ volumes:
   vscode-extensions:
     name: py-algo-workshop-vscode-extensions
   vscode-extensions-insiders:
-    name: py-algo-workshop-vscode-extensions-insiders
+    name: py-algo-workshop-vscode-insiders-extensions
