@@ -14,5 +14,5 @@
     },
   ],
   "python.analysis.typeCheckingMode": "basic",
-  "python.defaultInterpreterPath": "/home/python/venv/main/bin/python"
+  "python.defaultInterpreterPath": "/home/dev/venv/main/bin/python"
 }

@@ -1,16 +1,18 @@
 version: "3.9"
 services:
   py-algo-workshop:
+    stdin_open: true
+    init: true
     environment:
       GH_TOKEN: ${GH_TOKEN}
     volumes:
       - type: volume
         source: vscode-extensions
-        target: /home/python/.vscode-server/extensions
+        target: /home/dev/.vscode-server/extensions
       - type: volume
         source: vscode-extensions-insiders
-        target: /home/python/.vscode-server-insiders/extensions
-    command: /bin/sh -c "while sleep 1000; do :; done"
+        target: /home/dev/.vscode-server-insiders/extensions
+    # command: /bin/sh -c "while sleep 1000; do :; done"
 
 volumes:
   vscode-extensions:

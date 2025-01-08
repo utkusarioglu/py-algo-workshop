@@ -1,11 +1,11 @@
-version: "3.9"
-
 services:
   py-algo-workshop:
-    image: utkusarioglu/python-devcontainer:1.0.15
+    # image: utkusarioglu/python-devcontainer:1.0.15
+    # image: utkusarioglu/python-devcontainer:experiment-feat-music-sequencer-8
+    image: utkusarioglu/python-devcontainer:3.13-ubuntu-test-16
     environment:
-      PYTHONPATH: /utkusarioglu-com/workshops/python-algo
+      PYTHONPATH: /utkusarioglu/python-algo-workshop
     volumes:
       - type: bind
         source: ..
-        target: /utkusarioglu-com/workshops/python-algo
+        target: /utkusarioglu/python-algo-workshop
